@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- CSS LINK -->
+    <link href="style.css" type="text/css" rel="stylesheet"/>
+    <title>Home</title>
+
+
+    <!-- FONT AWESOME & TYPEKIT -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.typekit.net/uon5pzw.css">
+
+    <!--  JS LINK-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <!-- JS for Random image -->
+    <script type="text/javascript">
+		// place your images in this array
+		var random_images_array = ['adirondackviews.jpg', 'africansunset.jpg', 'africansunset2.jpg', 'bluemountains.jpg','bushlandscape.jpg','chicago18.jpg','evilsquirrel.jpg','fingerlakesunset.jpg','helicopter.jpg','jakeinthebush.jpg','jewishsunset.jpg','orangesky.jpg','rockymountains.jpg','skyroad.jpg','snowwalker.jpg','squirrelcandid.jpg','tsvatalley.jpg','yellowbluehouse.jpg'];
+		function getRandomImage(imgAr, path) {
+		    path = path || 'img/landingpage/'; // default path here
+		    var num = Math.floor( Math.random() * imgAr.length );
+		    var img = imgAr[ num ];
+		    var imgStr = '<img src="' + path + img + '" alt = "">';
+		    document.write(imgStr); document.close();}
+		</script>
+  </head>
+  <body class="home">
+    <nav class="navbar navbar-toggleable position-absolute navbar-fixed-top bg-transparent sticky-top navbartag">
+      <div class="container">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav d-flex flex-row">
+            <li><a href="pictures.htm" class="nav-item nav-link mainnavlink">PICTURES</a></li>
+            <li><a href="#" class="nav-item nav-link mainnavlink">EXPLORE</a></li>
+            <li><a href="#" class="nav-item nav-link mainnavlink">PROJECTS</a></li>
+            <li><a href="#" class="nav-item nav-link mainnavlink">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="position-relative container-fluid">
+      <div class="row">
+        <div class="landingpage">
+          <script type="text/javascript">getRandomImage(random_images_array, 'img/landingpage/')</script>
+        </div>
+      </div>
+      <div class="row currentviberow">
+        <div id="mycurrentvibe">
+            <p class="">MY CURRENT VIBE</p>
+            <div class="album mb-3"> <!-- spotify music -->
+      				<iframe src="https://open.spotify.com/embed/user/317b724ub36qiirjoojw2pg7jiai/playlist/7wKhKCR48XLKaQy77dCoiW" width="100%" height="700" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      			</div> <!-- end spotify music -->
+        </div>
+      </div>
+    </div>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+.
