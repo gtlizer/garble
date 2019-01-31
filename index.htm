@@ -21,7 +21,7 @@
     <!-- JS for Random image -->
     <script type="text/javascript">
 		// place your images in this array
-		var random_images_array = ['adirondackviews.jpg', 'africansunset.jpg', 'africansunset2.jpg', 'bluemountains.jpg','bushlandscape.jpg','chicago18.jpg','evilsquirrel.jpg','fingerlakesunset.jpg','helicopter.jpg','jakeinthebush.jpg','jewishsunset.jpg','orangesky.jpg','rockymountains.jpg','skyroad.jpg','snowwalker.jpg','squirrelcandid.jpg','tsvatalley.jpg','yellowbluehouse.jpg'];
+		var random_images_array = ['adirondackviews.jpg', 'africansunset.jpg', 'africansunset2.jpg', 'bluemountains.jpg','bushlandscape.jpg','chicago18.jpg','evilsquirrel.jpg','fingerlakesunset.jpg','helicopter.jpg','jakeinthebush.jpg','jewishsunset.jpg','orangesky.jpg','rockymountains.jpg','skyroad.jpg','snowwalker.jpg','squirrelcandid.jpg','sunset_to_sea','tsvatalley.jpg','yellowbluehouse.jpg'];
 		function getRandomImage(imgAr, path) {
 		    path = path || 'img/landingpage/'; // default path here
 		    var num = Math.floor( Math.random() * imgAr.length );
@@ -31,13 +31,13 @@
 		</script>
   </head>
   <body class="home">
-    <nav class="navbar navbar-toggleable position-absolute navbar-fixed-top bg-transparent sticky-top navbartag">
-      <div class="container">
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
+    <nav class="navbar navbar-toggleable position-absolute navbar-fixed-top bg-transparent sticky-top navbartag w-100">
+      <div class="container-fluid">
+        <button class="navbar-toggler pt-4 togglebars" data-toggle="collapse" data-target="#mainNav">
           <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav d-flex flex-row">
+          <ul class="navbar-nav flex-row justify-content-around pt-4 mr-5">
             <li><a href="pictures.htm" class="nav-item nav-link mainnavlink">PICTURES</a></li>
             <li><a href="#" class="nav-item nav-link mainnavlink">EXPLORE</a></li>
             <li><a href="#" class="nav-item nav-link mainnavlink">PROJECTS</a></li>
