@@ -122,13 +122,13 @@ transform: rotate(180deg);
   background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
   }
 
-  .abouttext{
-    display: flex;
-    line-height: 100vh;
-    justify-content: center;
-    font-size: 60px;
-    color:white;
-  }
+.abouttext{
+  display: flex;
+  line-height: 100vh;
+  justify-content: center;
+  font-size: 60px;
+  color:white;
+}
 
 /* ------------SM--------------- */
 /* -----------MOBILE------------ */
