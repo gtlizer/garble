@@ -21,21 +21,34 @@
    
   </head>
   <body class="pictures">
-    <nav class="navbar navbar-toggleable position-absolute navbar-fixed-top bg-transparent sticky-top navbartag w-100">
-      <div class="container-fluid">
-        <button class="navbar-toggler pt-4 togglebars" data-toggle="collapse" data-target="#mainNav">
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav flex-row justify-content-around pt-4 mr-5">
-            <li><a href="index.htm" class="nav-item nav-link mainnavlink">HOME</a></li>
-            <li><a href="#" class="nav-item nav-link mainnavlink">EXPLORE</a></li>
-            <li><a href="#" class="nav-item nav-link mainnavlink">PROJECTS</a></li>
-            <li><a href="#" class="nav-item nav-link mainnavlink">CONTACT</a></li>
-          </ul>
-        </div>
+    <nav class="navbar navbar-toggleable sticky-top navbartag p-0">
+      <div class="container-fluid px-0">
+          <div class="collapse w-100" id="navbarToggleExternalContent">
+              <ul class="nav bg-dark nav-fill">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.htm">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="about.htm">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="explore.htm">Explore</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="projects.htm">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contact.htm">Contact</a>
+                  </li>
+              </ul>
+          </div>
       </div>
-    </nav>
+      <nav class="navbar navbar-dark bg-clear position-absolute">
+          <button class="navbar-toggler mt-5 togglebars" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-angle-down"></i>
+          </button>
+      </nav>
+  </nav>
     <div class="position-relative container-fluid px-0">
       <div class="row no-gutters">
         <div class="left_column col-md-6">
@@ -304,16 +317,3 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-.

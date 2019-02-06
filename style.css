@@ -1,9 +1,9 @@
-html{
-    height: 100%;
-    font-family: Motiva-sans, sans-serif;
-    scroll-behavior: smooth;
-    padding: 0px;
-    margin: 0px;
+html,body{
+  height: 100%;
+  font-family: 'Quicksand', sans-serif;
+  scroll-behavior: smooth;
+  padding: 0px;
+  margin: 0px;
 }
 
 a{text-decoration: none; color:white;}
@@ -11,9 +11,11 @@ a:visited{color:white;}
 a:active{color:white;}
 a:hover{color:white;}
 
-.togglebars:focus,.togglebars:active {
-  outline: none !important;
-  box-shadow: none;
+.togglebars{
+outline: none !important;
+box-shadow: none;
+border:none;
+padding-top:40px;
 }
 
 /* ------------------------------------------------------ */
@@ -23,7 +25,7 @@ a:hover{color:white;}
 /* ------------------------------------------------------ */
 
 .home{
-  background: linear-gradient(180deg, rgba(99,207,128,1) 35%, rgba(17,37,17,1) 100%);
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 }
 
 /* ------------SM--------------- */
@@ -32,43 +34,36 @@ a:hover{color:white;}
 @media screen and (min-width: 320px) {
 
 .navbartag{
-  color: white;
-  text-align: center;
-  font-size: 25px;
-  font-weight: 700;
+color: white;
+text-align: center;
+font-size: 25px;
 }
 
 .fas{
-  color:white;
-  font-size: 1.5em;
-}
-
-#mainNav{
-  margin-left: 10%;
-  margin-top: -9%;
+color:white;
+font-size: 3em;
 }
 
 .mainnavlink{
-  margin: 0px 10px;
+margin: 0px 10px;
 }
 
-.mainnavlink:hover{text-decoration: underline;}
+.nav-link:hover{text-decoration: underline;}
 
 .landingpage{
-  height:100%%;
-  overflow: hidden;
-  position: relative;
+height:100%%;
+overflow: hidden;
+position: relative;
 }
 
-#mycurrentvibe{
-  position: absolute;
-  top:10%;
-  left:10%;
-  width: 80%;
-  color:white;
-  font-size: 40px;
-  text-align: center;
-  font-weight: 600;
+.togglebars{
+  padding-top:50px;
+  margin:auto;
+}
+
+.togglebars.navbar-toggler[aria-expanded="true"]{
+margin-top: 250px!important;
+transform: rotate(180deg);
 }
 
 }
@@ -78,22 +73,18 @@ a:hover{color:white;}
 
 @media screen and (min-width: 768px) {
 
-  .fas{
-    font-size: 2em;
-  }
+.fas{
+  font-size: 3.5em;
+}
 
-  .navbartag{
-    font-size: 30px;
-  }
+.navbartag{
+  font-size: 30px;
+}
 
-  #mainNav{
-    margin-left: 10%;
-    margin-top: -7.5%;
-  }
-
-  .mainnavlink{
-    margin: 0px 25px;
-  }
+.togglebars.navbar-toggler[aria-expanded="true"]{
+  margin-top: 200px!important;
+  transform: rotate(180deg);
+}  
 
 }
 
@@ -103,36 +94,76 @@ a:hover{color:white;}
 
 @media screen and (min-width: 992px) {
 
-  .fas{
-    font-size: 2.5em;
+.fas{
+  font-size: 3.5em;
+}
+
+.navbartag{
+  font-size: 35px;
+}
+
+.togglebars.navbar-toggler[aria-expanded="true"]{
+  margin-top: 200px!important;
+  transform: rotate(180deg);
+}  
+
+}
+
+/* ============================================================ */
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* ........................................................... */
+/* ---------------------ABOUT PAGE -------------------*/
+/* ........................................................... */
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* ============================================================ */
+
+.about{
+  
+  height: 100%;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
   }
 
-  .navbartag{
-    font-size: 35px;
-  }
-
-  #mainNav{
-    margin-left: 10%;
-    margin-top: -7%;
-  }
-
-  .mainnavlink{
-    margin: 0px 29px;
-  }
-
-  #mycurrentvibe{
-    position: relative;
+  .abouttext{
+    display: flex;
+    line-height: 100vh;
+    justify-content: center;
     font-size: 60px;
+    color:white;
   }
 
-  .currentviberow{
-    height: 100%;
-    background: linear-gradient(180deg, rgba(99,207,128,1) 35%, rgba(17,37,17,1) 100%);
-  }
+/* ------------SM--------------- */
+/* -----------MOBILE------------ */
+
+@media screen and (min-width: 320px) {
 
 
 
 }
+
+/* -------------MD-------------- */
+/* -----------TABLET------------ */
+
+@media screen and (min-width: 768px) {
+
+
+}
+
+/* -------------LG-------------- */
+/* -----------DESKTOP------------ */
+
+
+@media screen and (min-width: 992px) {
+
+
+}
+
+
+
+
 
 
 /* ============================================================ */
@@ -149,12 +180,12 @@ a:hover{color:white;}
 }
 
 .left_column{
-  min-height: 100%;
+  height: 100vh;
   overflow: auto;
 }
 
 .right_column{
-  min-height: 100%;
+  height: 100vh;
   overflow: auto;
 }
 
@@ -162,6 +193,8 @@ img {
   max-width: 100%;
   max-height: 100%;
 }
+
+
 
 /* ------------SM--------------- */
 /* -----------MOBILE------------ */
@@ -201,7 +234,20 @@ img {
 /* ============================================================ */
 
 .explore{
-  background: linear-gradient(180deg, rgba(99,207,128,1) 35%, rgba(17,37,17,1) 100%);
+  height: 100%;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+.exploretxt{
+  display: flex;
+  line-height: 100vh;
+  justify-content: center;
+  font-size: 60px;
+  color:white;
 }
 
 /* ------------SM--------------- */
@@ -244,8 +290,22 @@ img {
 /* ============================================================ */
 
 .projects{
-  background: linear-gradient(180deg, rgba(99,207,128,1) 35%, rgba(17,37,17,1) 100%);
-}
+  
+    height: 100%;
+      background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    }
+  
+    .projectstext{
+      display: flex;
+      line-height: 100vh;
+      justify-content: center;
+      font-size: 60px;
+      color:white;
+    }
 
 /* ------------SM--------------- */
 /* -----------MOBILE------------ */
@@ -286,15 +346,76 @@ img {
 /* ============================================================ */
 
 .contact{
-  background: linear-gradient(180deg, rgba(99,207,128,1) 35%, rgba(17,37,17,1) 100%);
+  background-color: white;
 }
+
+
 
 /* ------------SM--------------- */
 /* -----------MOBILE------------ */
 
 @media screen and (min-width: 320px) {
 
+.social-flex{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.instagram{
+  height: 25vh;
+  background-image: url(img/bg/instalongest.jpg);
+  background-size: cover;
+  font-size: 100px;
+  line-height: 25vh;
+  text-align: center;
+  transition: font-size .2s ease;
+}
 
+.instagram:hover{
+  font-size: 120px;
+}
+
+.linkedin{
+  height: 25vh;
+  background-image: url(img/bg/linkedinlong.jpg);
+  background-size: cover;
+  font-size: 100px;
+  line-height: 25vh;
+  text-align: center;
+  transition: font-size .2s ease;
+}
+
+.linkedin:hover{
+  font-size: 120px;
+}
+
+.mail{
+  height: 25vh;
+  background-image: url(img/bg/emaillonger.jpg);
+  background-size: cover;
+  font-size: 100px;
+  line-height: 25vh;
+  text-align: center;
+  transition: font-size .2s ease;
+}
+
+.mail:hover{
+  font-size: 120px;
+}
+
+.spotify{
+  height: 25vh;
+  background-image: url(img/bg/spotifylong.jpg);
+  background-size: cover;
+  font-size: 100px;
+  line-height: 25vh;
+  text-align: center;
+  transition: font-size .2s ease;
+}
+
+.spotify:hover{
+  font-size: 120px;
+}
 
 }
 
@@ -303,6 +424,63 @@ img {
 
 @media screen and (min-width: 768px) {
 
+  .social-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .instagram{
+    height: 100vh;
+    background-image: url(img/bg/instalongest.jpg);
+    background-size: cover;
+    font-size: 120px;
+    line-height: 100vh;
+    transition: font-size .2s ease;
+  }
+
+  .instagram:hover{
+    font-size: 140px;
+  }
+  
+  .linkedin{
+    height: 100vh;
+    background-image: url(img/bg/linkedinlong.jpg);
+    background-size: cover;
+    font-size: 120px;
+    line-height: 100vh;
+    transition: font-size .2s ease;
+  }
+
+  .linkedin:hover{
+    font-size: 140px;
+  }
+  
+  .mail{
+    height: 100vh;
+    background-image: url(img/bg/emaillonger.jpg);
+    background-size: cover;
+    font-size: 120px;
+    line-height: 100vh;
+    transition: font-size .2s ease;
+  }
+
+  .mail:hover{
+    font-size: 140px;
+  }
+  
+  .spotify{
+    height: 100vh;
+    background-image: url(img/bg/spotifylong.jpg);
+    background-size: cover;
+    font-size: 120px;
+    line-height: 100vh;
+    transition: font-size .2s ease;
+  }
+
+  .spotify:hover{
+    font-size: 140px;
+  }
+  
 
 }
 
@@ -312,6 +490,49 @@ img {
 
 @media screen and (min-width: 992px) {
 
+  .instagram{
+    height: 100vh;
+    background-image: url(img/bg/instalongest.jpg);
+    background-size: cover;
+    font-size: 140px;
+  }
+
+  .instagram:hover{
+    font-size: 160px;
+  }
+  
+  .linkedin{
+    height: 100vh;
+    background-image: url(img/bg/linkedinlong.jpg);
+    background-size: cover;
+    font-size: 140px;
+  }
+
+  .linkedin:hover{
+    font-size: 160px;
+  }
+  
+  .mail{
+    height: 100vh;
+    background-image: url(img/bg/emaillonger.jpg);
+    background-size: cover;
+    font-size: 140px;
+  }
+
+  .mail:hover{
+    font-size: 160px;
+  }
+  
+  .spotify{
+    height: 100vh;
+    background-image: url(img/bg/spotifylong.jpg);
+    background-size: cover;
+    font-size: 140px;
+  }
+
+  .spotify:hover{
+    font-size: 160px;
+  }
 
 }
 
