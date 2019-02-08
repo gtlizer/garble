@@ -51,10 +51,20 @@ margin: 0px 10px;
 .nav-link:hover{text-decoration: underline;}
 
 .landingpage{
-height:100%%;
+height:vh;
 overflow: hidden;
 position: relative;
 }
+
+.landingpage img{
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
 
 .togglebars{
   padding-top:50px;
