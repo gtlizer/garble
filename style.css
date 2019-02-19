@@ -159,6 +159,12 @@ transform: rotate(180deg);
   scroll-behavior: smooth;
   }
 
+.about::-webkit-scrollbar {
+  width: 4px;
+}
+.about::-webkit-scrollbar-thumb {
+  background: white; 
+}
 
 /* ------------SM--------------- */
 /* -----------MOBILE------------ */
@@ -477,7 +483,7 @@ img {
 /* ============================================================ */
 
 .contact{
-  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background: black;
 }
 
 
