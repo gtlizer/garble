@@ -1,3 +1,4 @@
+
 html,body{
   height: 100%;
   font-family: 'Cabin' sans-serif;
@@ -173,16 +174,16 @@ transform: rotate(180deg);
 
   .abouttext{
     color:white;
-    overflow: scroll;
+    overflow: hidden;
   }
   
   .name{
     text-align: left;
-    font-size: 80px;
+    font-size: 6em;
     font-weight: 500;
-    position: absolute;
-    top: 4%;
-    left: 15%;
+    position: fixed;
+    top: 30%;
+    left: 10%
   }
 
   .name p{
@@ -204,13 +205,16 @@ transform: rotate(180deg);
     margin: 40em 1.3em;
     font-size: 20px;
     font-weight: 200;
+    position: absolute;
+    top: 100vh;
+    letter-spacing: 1px;
+    word-spacing: 1px;
   }
 
   .bio p:first-child{
     font-size: 30px;
     font-weight: 400;
     line-height: 1.5;
-
   }
 
 }
@@ -219,7 +223,10 @@ transform: rotate(180deg);
 /* -----------TABLET------------ */
 
 @media screen and (min-width: 768px) {
-
+.bio{
+  left: 50%;
+  right: 10%;
+}
 
 }
 
@@ -228,6 +235,12 @@ transform: rotate(180deg);
 
 
 @media screen and (min-width: 992px) {
+  
+  .bio{
+    left: 40%;
+    right: 10%;
+  }
+
 
 
 }
@@ -376,62 +389,150 @@ img {
 
 @media screen and (min-width: 320px) {
 
-.collages{
-  background: linear-gradient(180deg, rgba(103,200,250,1) 0%, rgba(0,23,168,1) 100%);
-  height: 25vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.project-item{
+  position: relative;
 }
 
-.collages:hover .collagestxt{
-  
-}
-
-.collagestxt{
-  padding: 1em;
-}
-
-.zoo-site{
-  background: linear-gradient(180deg, rgba(131,58,180,1) 0%, rgba(253,29,210,1) 50%, rgba(252,176,69,1) 100%);
-  height: 25vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.zoo-site p{
-  padding: 1em;
-}
-
-.biome-identification{
-  background: linear-gradient(180deg, rgba(67,170,111,1) 0%, rgba(59,255,55,1) 100%);
-  height: 25vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.biome-identification p{
-  padding:1em;
-}
-
-.coming-soon{
-  background: linear-gradient(180deg, rgba(238,152,7,1) 0%, rgba(255,220,51,1) 100%);
-  height: 25vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;}
-
-.project-item p{
+.non-hover-zoo-txt, .non-hover-biome-txt, .coming-soon{
   color:white;
   font-size: 2rem;
   font-weight: 500;
   line-height: 1;
   text-align: center;
-  display: inline-block;
-  position: absolute;
 }
+
+/* ZOO */
+
+.zoo-site{
+  background: black;
+  height: 33vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hover-zoo-txt-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  font-size: 1.5em;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity .5s ease;
+}
+
+.hover-zoo-txt-flex::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height:100%;
+  position: fixed;
+  top:0;
+  left:0;
+  background-color: rgba(0,0,0,.5);
+}
+
+.hover-zoo-txt{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity .5s ease;
+}
+
+.hover-zoo-txt a{
+  z-index: 5;
+}
+
+.zoo-site:hover .hover-zoo-txt:first-of-type{
+  background-image: url(img/bg/old_zoo_bg.png);
+  background-size: cover;
+  background-position: center;
+  border-right: 5px solid black;
+}
+
+.zoo-site:hover .hover-zoo-txt:last-of-type{
+  background-image: url(img/bg/new_zoo_bg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.zoo-site:hover .non-hover-zoo-txt{
+  opacity: 0;
+}
+
+.zoo-site:hover .hover-zoo-txt-flex{
+  opacity: 1;
+}
+
+.zoo-site p:first-child{
+  padding: 1em;
+}
+
+/* BIOME */
+
+.biome-identification{
+  background-color: white;
+  height: 33vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.biome-identification p{
+  padding:1em;
+  color:black;
+}
+
+.hover-biome-txt{
+  color:black;
+  position: absolute;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.3;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .3s linear;
+}
+
+.non-hover-biome-txt{
+  transition: opacity .3s linear;
+
+}
+
+.biome-identification:hover .hover-biome-txt{
+  opacity: 1;
+}
+
+.biome-identification:hover .non-hover-biome-txt{
+  opacity: 0;
+}
+
+/* COMING SOON */
+
+.coming-soon{
+  background-color:black;
+  height: 34vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+
+.coming-soon-txt{
+  transition: transform .3s ease-in-out;
+}
+
+.coming-soon-txt:hover{
+  transform: scale(1.2);
+}
+
 
 }
 
@@ -439,24 +540,41 @@ img {
 /* -----------TABLET------------ */
 
 @media screen and (min-width: 768px) {
-
-  .collages{
-  height: 100vh;
-  }
   
   .zoo-site{
   height: 100vh;
+  width: 33vw;
   }
   
   .biome-identification{
   height: 100vh;
+  width: 33vw;
   }
   
   .coming-soon{
   height: 100vh;
+  width: 34vw;
   }
 
+  .hover-zoo-txt-flex{
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 2em;
+  }
 
+  .hover-zoo-txt{
+    width: 100%;
+    height: 50%;
+  }
+
+  .zoo-site:hover .hover-zoo-txt:first-of-type{
+    border-right: 0px;
+    border-bottom: 5px solid black;
+  }
+
+  .hover-biome-txt{
+    font-size: 1.5rem;
+  }
 
 }
 
@@ -466,8 +584,13 @@ img {
 
 @media screen and (min-width: 992px) {
 
-  
+  .hover-zoo-txt-flex{
+    font-size: 2.3em;
+  }
 
+  .hover-biome-txt{
+    font-size: 2rem;
+  }
 }
 
 
@@ -672,39 +795,3 @@ img {
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/

@@ -1,0 +1,885 @@
+html {
+  scroll-behavior: smooth;
+  font-family: 'Cantora One', sans-serif;
+}
+
+body{
+	background: #69B092;
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+}
+
+a{text-decoration: none;}
+a:visited{color:white;}
+a:active{color:white;}
+a{color:white;}
+
+p{margin: none;
+margin-block-start:0em;
+margin-block-end:0em;}
+
+h1, h2, h3, h4, h5, h6{
+font-weight: normal;
+margin-block-start:0em;
+margin-block-end:0em;
+}
+
+h1, h2{
+line-height: 50px;
+}
+
+h3{
+line-height: 40px;
+}
+
+a:hover{text-decoration: underline;}
+
+/* -------------NAV BAR -----------*/
+
+
+nav{
+	height:75px;
+	background-color: #69B092;
+	color: white;
+	position: relative;
+}
+
+li{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+nav a:hover{text-decoration: underline;}
+
+nav li a:hover{text-decoration: underline;}
+
+li a{width: 200px;}
+
+.backtosite{
+	position: absolute;
+	top:7%;
+	left:1%;
+	font-size: 3em;
+}
+
+.navtext{
+	position: absolute;
+	color: white;
+	top: 11%;
+	font-size: 40px;
+	text-shadow: 2px 1px 4px #000000;
+}
+
+.navtext1{
+	left: 125px;
+}
+
+/* PLAN A TRIP SUB NAV*/
+
+.planatripsubnav li a{
+	text-decoration: none;
+	font-size: 25px;
+	background-color: #69B092;
+	display: block;
+	padding: 10px;
+}
+
+.planatripsubnav{
+	border: 2px solid white;
+	border-top: none;
+}
+
+nav .navtext1 .planatripsubnav{
+	display: none;
+	flex-direction: column;
+	position: absolute;
+	z-index: 100;
+}
+
+nav .navtext1:hover .planatripsubnav{
+	display: flex;
+}
+
+/* PLAN A TRIP SUB NAV*/
+/* LEARN SUB NAV*/
+
+.navtext2{
+	left: 400px;
+}
+
+.learnsubnav li a{
+	text-decoration: none;
+	font-size: 25px;
+	background-color: #69B092;
+	display: block;
+	padding: 10px;
+}
+
+.learnsubnav{
+	border: 2px solid white;
+	border-top: none;
+}
+
+nav .navtext2 .learnsubnav{
+	display: none;
+	flex-direction: column;
+	position: absolute;
+	z-index: 100;
+}
+
+nav .navtext2:hover .learnsubnav{
+	display: flex;
+}
+
+/* LEARN SUB NAV*/
+
+.navtext3{
+	left: 660px;
+	top: 5px;
+}
+
+/* SUPPORT SUB NAV*/
+
+
+.navtext4{
+	left: 900px;
+}
+
+.supportsubnav li a{
+	text-decoration: none;
+	font-size: 25px;
+	background-color: #69B092;
+	display: block;
+	padding: 10px;
+}
+
+.supportsubnav{
+	border: 2px solid white;
+	border-top: none;
+}
+
+nav .navtext4 .supportsubnav{
+	display: none;
+	flex-direction: column;
+	position: absolute;
+	z-index: 100;
+}
+
+nav .navtext4:hover .supportsubnav{
+	display: flex;
+}
+
+
+/* SUPPORT SUB NAV*/
+
+.searchbar{
+	position: absolute;
+	left: 1125px;
+	padding: 6px 10px;
+	margin-top: 8px;
+	margin-right: 16px;
+	background-color: #69B092;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+}
+.searchbar input[type=text] {
+  padding: 10px;
+  font-size: 20px;
+  background-color: #69B092;
+  border-width: 4px;
+  border-color:white;
+  border-radius: 25px;
+}
+
+/* -------------VIDEO/PHOTO-----------*/
+
+
+#myVideo {
+  position: absolute;
+  right: 0;
+  top: 75px;
+  min-width: 100%; 
+}
+
+.leopardimg{
+	height: 718px;
+	width: 100%;
+	background-image: url(media/animals/leopard.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	text-align: center;
+	position: relative;
+	color: white;
+	font-size: 40px;
+}
+
+.leopardtxt{
+	padding-top: 25px;
+}
+
+.leopardbutton{
+	border-radius: 100px;
+	background-color: #CE8884;
+	width: 300px;
+	padding: 7px;
+	position: absolute;
+	bottom: 25%;
+	left: 39%;
+
+}
+
+
+/* -------------ZOO HOURS-----------*/
+
+.zoohoursboxhome{
+	margin-top: 810px;
+}
+
+.zoohoursbox{
+	background-color: #69B092;
+	height: 300px;
+	width: 100%;
+	color:white;
+	position: relative;
+}
+
+.zoohoursbox::before{
+	content: url(media/wrappers/wrapper1.png);
+	width: 100%;
+	position: absolute;
+	top: -180px;
+	display: block;
+}
+
+.zootext{
+	position: absolute;
+	top: -100px;
+	left: 50px;
+	font-size: 60px;
+	text-shadow: 2px 1px 4px #000000;
+}
+
+.hours{
+	display: flex;
+	font-size: 50px;
+	text-align: center;
+	margin: auto;
+	width: 50%;
+	text-shadow: 1px 1px 3px #000000;
+}
+
+h1{font-size: 60px;}
+
+h2{font-size: 40px;}
+
+.opentxt{
+	margin-right: 40px;
+}
+
+.closetxt{
+	margin-left: 50px ;
+}
+
+.zoohoursbox::after{
+	content: url(media/wrappers/wrapper2.png);
+	width: 100%;
+	position: absolute;
+	bottom: -175px;
+	display: block;
+}
+
+/* -------------SUBSCRIBE-----------*/
+
+.deerpic{
+	background-attachment: fixed;
+	background-image: url(media/animals/boywithdeer.jpg);
+	height: 741px;
+	width: 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.subscribebg{
+	width: 100%;
+	height: 150px;
+	background-color: #69B092;
+	color: white;
+	font-size: 25px;
+	position: relative;
+}
+
+.subscribebutton{
+	height: 100px;
+	border-radius: 200px;
+	width: 60%;
+	position: absolute;
+	display: flex;
+}
+
+.subbutton{
+	background-color: #CE8884;
+	top: 15%;
+	left: 22%;
+}
+
+.subscribetxt{
+	margin-left: 30px;
+	margin-top: 5px;
+}
+
+.emailbar{
+	position: absolute;
+	left:47%;
+	top:20%;
+}
+
+.subemailbar{
+	background-color: #CE8884;
+}
+
+.emailbar input[type=text] {
+	padding: 15px;
+	font-size: 20px;
+	width: 400px;
+	border-width: 4px;
+	border-color: white;
+	border-radius: 50px;
+}
+
+.subemailbar input[type=text] {
+	background-color: #CE8884;
+}
+
+/* -------------BUY/DONATE/CONTACT-----------*/
+
+.peacock{
+	background-image: url(media/animals/peacock.jpg);
+	height: 664px;
+	width: 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	position: relative;
+	color: white;
+	text-align: center;
+}
+
+.peacockdiv{
+	position: absolute;
+	background-color: #357CCA;
+	border-radius: 15px;
+	width: 250px;
+	height: 200px;
+	font-size: 30px;
+}
+
+.peacockbuy{
+	bottom: 20%;
+	left: 15%;
+}
+
+.peacocktext{
+	padding-top: 10px;
+}
+
+.peacockdonate{
+	top: 10%;
+	left: 40%;
+}
+
+.peacockcontact{
+	bottom: 20%;
+	right: 15%;
+}
+
+.peacockbuttoncontact{
+	background-color: #D88480;
+	border-radius: 100px;
+	width: 150px;
+	padding: 7px;
+	margin: 15px 0px 0px 40px;
+}
+
+.peacockbutton{
+	background-color: #D88480;
+	border-radius: 100px;
+	width: 150px;
+	padding: 0px 7px 7px 7px;
+	margin: 40px 0px 0px 40px;
+}
+
+
+/* -------------SOCIALS-----------*/
+
+.socials{
+	display: flex;
+	width: 100%;
+	font-size: 60px;
+}
+
+.socialicon{
+	padding: 10px 30px;
+	height: 70px;
+	width:200px;
+	text-align: center;
+}
+
+.youtube{
+	background-color: #ED3833;
+}
+.youtube:hover{background-color: white;}
+.youtube:hover i{color:#ED3833;}
+
+
+
+.twitter{
+	background-color: #4FA5EB;
+}
+.twitter:hover{background-color: white;}
+.twitter:hover i{color:#4FA5EB;}
+
+
+
+.instagram{
+	background-image: linear-gradient(to bottom right, #4C5FD7, #7232BD,#C32AA3,#F46F30,#FFDC7D)
+}
+.instagram:hover{background-image:linear-gradient(to right, #ffffff, #ffffff)}
+.instagram:hover i{color:#C32AA3;}
+
+
+
+.tripadvisor{
+	background-color: #3C8132;
+}
+.tripadvisor:hover{background-color: white;}
+.tripadvisor:hover i{color:#3C8132;}
+
+
+
+.facebook{
+	background-color: #3E5D94;
+}
+.facebook:hover{background-color: white;}
+.facebook:hover i{color:#3E5D94;}
+
+
+
+.pinterest{
+	background-color: #AF2A2E;
+}
+.pinterest:hover{background-color: white;}
+.pinterest:hover i{color:#AF2A2E;}
+
+
+/* -------------FOOTER-----------*/
+
+.footernav{
+	width: 100%;
+	height: 280px;
+	background-color: #285166;
+	display: flex;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	position: relative;
+}
+
+.footertitle{
+	font-size: 40px;
+}
+
+.footersubtitle{
+	font-size: 20px;
+	margin-top: 40px;
+	line-height: 25px;
+}
+
+.footersection{
+	margin: 20px 95px;
+}
+
+.footerdivider{
+	position: absolute;
+	border-right: 3px solid white;
+	height: 200px;
+	width: 1px;
+	top: 15%;
+
+}
+
+.dividerleft{
+	left: 25%;
+}
+
+.dividermiddle{
+	left: 50%;
+}
+
+.dividerright{
+	left: 75%;
+}
+
+
+/* -------------FOOTERCREDIT-----------*/
+
+
+.footercredits{
+	width: 100%;
+	height: 75px;
+	background-color: #1C3542;
+	display: flex;
+	color: white;
+	font-size: 15px;
+	float: right;
+}
+
+.credittxt{
+	padding: 20px 15px;
+}
+
+.credit{
+	padding: 5px 20px;
+	border-right-width: 2px;
+	border-right-color: white;
+}
+
+.credittxtflexbox{
+	justify-content: flex-start;
+	display: flex;
+}
+
+.creditflexbox{
+	justify-content: flex-end;
+	display: flex;
+	margin-left: 565px;
+}
+
+
+
+
+/* ----------------------------PLAN A TRIP PAGE----------------------------*/
+
+/* -------------PRICES-----------*/
+
+
+.prices{
+	height: 750px;
+	width: 100%;
+	background-color: #CB906F;
+	background-image: url(media/bg/trax.png);
+}
+
+.pricesrow{
+	display: flex;
+	color:white;
+	padding-top: 170px;
+}
+
+.admission{
+	width:715px;
+	height:500px;
+	border-right: 6px solid white;
+}
+
+.admissiontitle{
+	font-size: 60px;
+	padding-left: 30px;
+	width: 225px;
+	margin-left: 20px;
+}
+
+.admissiondates{
+	display: flex;
+	justify-content: flex-end;
+	width: 710px;
+}
+
+.dates{
+	font-size: 25px;
+	text-align: center;
+	width: 145px;
+	height: 70px;
+	margin: 0px 15px;
+}
+
+.jan_feb{
+	margin-right: 40px;
+}
+
+.agegroup{
+	height: 70px;
+	display: flex;
+	width: 550px;
+	justify-content: flex-end;
+	margin-left: 120px;
+	border-bottom: 3px solid white;
+}
+
+.veterans{
+	border-bottom: none;
+}
+
+.columntitle{
+	margin-left: 0px;
+	width: 200px;
+}
+
+.firstprice{
+	padding-top: 30px;
+	margin-left: 10px;
+	width: 150px;
+}
+
+.secondprice{
+	margin-right: 0px;
+	padding-top: 30px;
+}
+
+
+/* ----GROUP RATE----*/
+
+
+
+.grouprate{
+	width:715px;
+	height:500px;
+}
+
+.groupratetitle{
+	width: 340px;
+	margin-left: 350px;
+}
+
+.groupratecontent{
+	position: relative;
+	width:715px;
+	height: 450px;
+}
+
+.grouprateprices1{
+	position: absolute;
+	left: 50px;
+}
+
+.grouprateprices2{
+	position: absolute;
+	right: 70px;
+	top: 50px;
+}
+
+.grouprateprices3{
+	position: absolute;
+	left: 50px;
+	bottom: 80px;
+}
+
+.grouprateprices4{
+	position: absolute;
+	right: 70px;
+	bottom: 10px;
+}
+
+.groupratesize{
+	font-size: 35px;
+	text-decoration: underline;
+}
+
+.groupratecost{
+	font-size: 20px;
+	padding: 10px;
+}
+
+.groupratecost2{
+	font-size: 20px;
+	padding: 10px;
+	text-align: right;
+}
+
+
+/* -------------CAROUSEL-----------*/
+
+
+.carousel{
+	width: 100%;
+	height: 350px;
+	background-color: grey;
+	position: relative;
+	overflow: hidden;
+}
+
+.slide{
+	width: 1440px;
+	height: 450px;
+	background-image: url(bg.jpg);
+	background-size: cover;
+	background-position: center;
+	color: white;
+	text-align: center;
+}
+
+.sliderbox{
+	display: flex;
+	width: 20000px;
+	position: relative;
+}
+
+.tuesdays{
+	background-image: url(media/animals/penguinlong.jpg);
+}
+
+.zoocamp{
+	background-image: url(media/animals/redpandalong.jpg);
+}
+
+.birthday{
+	background-image: url(media/animals/koala.jpg);
+}
+
+.slidetitle{
+	font-size: 80px;
+	padding-top: 20px;
+}
+
+.slidedescription{
+	font-size: 40px;
+	padding-top: 40px;
+}
+
+.left, .right{
+	position: absolute;
+	font-size: 60px;
+	color: white;
+	top: 40%;
+	z-index: 100;
+	cursor: pointer;
+}
+
+.left{
+	left: 1%;
+}
+
+.right{
+	right: 1%;
+	z-index: 101;
+}
+
+
+/* -------------MAP-----------*/
+
+
+.zoomap{
+	width: 100%;
+	height: 900px;
+	background-image: url(media/bg/giraffe.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.maptitle{
+	position: absolute;
+	left:46%;
+	color:white;
+	font-size: 60px;
+}
+
+.mapmap{
+	text-align: center;
+	padding-top: 6%;
+}
+
+.downloadprint{
+	position: absolute;
+	bottom:3.5%;
+	right: 9%;
+	color:white;
+	font-size: 30px;
+}
+
+
+/* -------------BUY TIX BAR-----------*/
+
+
+.buytixbar{
+	text-align: center;
+	background-color: #CE8884;
+	width: 100%;
+	height: 150px;
+	font-size: 70px;
+	color: white;
+	padding-top: 40px;
+}
+
+/* -------------SUBSCRIBE-----------*/
+
+
+.tigersubscribe{
+	width: 100%;
+	height: 786px;
+	background-image: url(media/animals/whitetiger.jpg);
+	position: relative;
+	color: white;
+	font-size: 25px;
+}
+
+.tigerbutton{
+	background-color: #305164;
+	bottom: 15%;
+	left: 22%;
+}
+
+.tigeremailbar{
+	background-color: #305164;
+}
+
+.tigeremailbar input[type=text] {
+	background-color: #305164;
+}
+
+/* -------------ERROR PAGE-----------*/
+
+.deerimg{
+	height: 655px;
+	width: 100%;
+	background-image: url(media/animals/deerpic.jpg);
+	background-repeat: no-repeat;
+	text-align: center;
+	position: relative;
+	color: white;
+	font-size: 40px;
+}
+
+.deertxt{
+	position: absolute;
+	top: 35%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
