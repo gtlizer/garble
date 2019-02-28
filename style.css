@@ -393,14 +393,6 @@ img {
   position: relative;
 }
 
-.non-hover-zoo-txt, .non-hover-biome-txt, .coming-soon{
-  color:white;
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 1;
-  text-align: center;
-}
-
 /* ZOO */
 
 .zoo-site{
@@ -447,6 +439,14 @@ img {
 
 .hover-zoo-txt a{
   z-index: 5;
+}
+
+.non-hover-zoo-txt{
+  color:white;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
 }
 
 .zoo-site:hover .hover-zoo-txt:first-of-type{
@@ -502,8 +502,15 @@ img {
 }
 
 .non-hover-biome-txt{
-  transition: opacity .3s linear;
+  color:white;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+}
 
+.non-hover-biome-txt{
+  transition: opacity .3s linear;
 }
 
 .biome-identification:hover .hover-biome-txt{
@@ -513,6 +520,51 @@ img {
 .biome-identification:hover .non-hover-biome-txt{
   opacity: 0;
 }
+
+/* CHARLIE SITE */
+
+.charlie-site{
+  background-color:black;
+  color:white;
+  height: 33vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hover-charlie-site-txt{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  font-size: 1.5em;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity .5s linear;
+}
+
+.non-hover-charlie-txt{
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+}
+/* 
+.non-hover-charlie-txt{
+  transition: opacity .5s linear;
+}
+
+.charlie-site:hover .hover-charlie-site-txt{
+  opacity: 1;
+}
+
+.charlie-site:hover .non-hover-charlie-txt{
+  opacity: 0;
+} */
+
 
 /* COMING SOON */
 
@@ -531,6 +583,14 @@ img {
 
 .coming-soon-txt:hover{
   transform: scale(1.2);
+}
+
+.coming-soon{
+  color:white;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
 }
 
 
