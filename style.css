@@ -493,7 +493,7 @@ img {
 .hover-biome-txt{
   color:black;
   position: absolute;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.3;
   text-align: center;
@@ -502,7 +502,7 @@ img {
 }
 
 .non-hover-biome-txt{
-  color:white;
+  color:black;
   font-size: 2rem;
   font-weight: 500;
   line-height: 1;
@@ -533,43 +533,76 @@ img {
   position: relative;
 }
 
-.hover-charlie-site-txt{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+.charlie-site-bg{
+  background-image: url(img/bg/charlie-site.jpg);
   position: absolute;
-  font-size: 1.5em;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-size: cover;
+  background-position: center;
   opacity: 0;
-  width: 100%;
-  height: 100%;
   transition: opacity .5s linear;
 }
 
-.non-hover-charlie-txt{
-  font-size: 2rem;
+.charlie-site-bg-overlay{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color: rgba(0,0,0,.3)
+}
+
+.hover-charlie-site-txt{
+  position: absolute;
+  font-size: 1.35rem;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: center;
+  opacity: 0;
+  padding: 0 1em;
+  transition: opacity .3s linear;
+}
+
+.non-hover-charlie-site-txt{
+  font-size: 2em;
   font-weight: 500;
   line-height: 1;
   text-align: center;
+  z-index: 10;
 }
-/* 
-.non-hover-charlie-txt{
-  transition: opacity .5s linear;
+
+.non-hover-charlie-site-txt:hover{
+  text-decoration: none;
+}
+
+.charlie-tag:hover{
+  text-decoration: none;
 }
 
 .charlie-site:hover .hover-charlie-site-txt{
   opacity: 1;
 }
 
-.charlie-site:hover .non-hover-charlie-txt{
+.charlie-site:hover .non-hover-charlie-site-txt{
   opacity: 0;
-} */
+}
 
+.non-hover-charlie-site-txt{
+  transition: opacity .3s linear;
+}
+
+.charlie-site:hover .charlie-site-bg{
+  opacity: 1;
+}
 
 /* COMING SOON */
 
 .coming-soon{
-  background-color:black;
+  background-color:white;
+  color:black;
   height: 34vh;
   display: flex;
   align-items: center;
@@ -586,7 +619,6 @@ img {
 }
 
 .coming-soon{
-  color:white;
   font-size: 2rem;
   font-weight: 500;
   line-height: 1;
@@ -610,10 +642,16 @@ img {
   height: 100vh;
   width: 33vw;
   }
+
+  .charlie-site{
+  height: 100vh;
+  width: 33vw;
+  }
   
   .coming-soon{
   height: 100vh;
-  width: 34vw;
+  width: 100vw;
+  font-size: 3rem;
   }
 
   .hover-zoo-txt-flex{
@@ -636,6 +674,10 @@ img {
     font-size: 1.5rem;
   }
 
+  .hover-charlie-site-txt{
+    font-size: 1.5rem;
+  }
+
 }
 
 /* -------------LG-------------- */
@@ -649,6 +691,10 @@ img {
   }
 
   .hover-biome-txt{
+    font-size: 2rem;
+  }
+
+  .hover-charlie-site-txt{
     font-size: 2rem;
   }
 }
