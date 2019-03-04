@@ -499,6 +499,10 @@ img {
   text-align: center;
   opacity: 0;
   transition: opacity .3s linear;
+  left: 0;
+  top: 15%;
+  display: flex;
+  align-items: center;
 }
 
 .non-hover-biome-txt{
@@ -564,6 +568,10 @@ img {
   opacity: 0;
   padding: 0 1em;
   transition: opacity .3s linear;
+  left: 0;
+  top: 30%;
+  display: flex;
+  align-items: center;
 }
 
 .non-hover-charlie-site-txt{
@@ -672,11 +680,14 @@ img {
 
   .hover-biome-txt{
     font-size: 1.5rem;
+    top:20%;
   }
 
   .hover-charlie-site-txt{
     font-size: 1.5rem;
+    top:40%;
   }
+  
 
 }
 
@@ -692,6 +703,7 @@ img {
 
   .hover-biome-txt{
     font-size: 2rem;
+    top:15%;
   }
 
   .hover-charlie-site-txt{
