@@ -739,9 +739,8 @@ img {
   flex-wrap: wrap;
   flex-direction: column;
 }
-.instagram{
+.icon{
   height: 25vh;
-  background-image: url(img/bg/instalongest.jpg);
   background-size: cover;
   font-size: 100px;
   line-height: 25vh;
@@ -749,51 +748,34 @@ img {
   transition: font-size .2s ease;
 }
 
-.instagram:hover{
+.icon:hover{
   font-size: 120px;
+}
+
+.instagram{
+  background-image: url(img/bg/instalongest.jpg);
 }
 
 .linkedin{
-  height: 25vh;
   background-image: url(img/bg/linkedinlong.jpg);
-  background-size: cover;
-  font-size: 100px;
-  line-height: 25vh;
-  text-align: center;
-  transition: font-size .2s ease;
-}
-
-.linkedin:hover{
-  font-size: 120px;
 }
 
 .mail{
-  height: 25vh;
   background-image: url(img/bg/emaillonger.jpg);
-  background-size: cover;
-  font-size: 100px;
-  line-height: 25vh;
-  text-align: center;
-  transition: font-size .2s ease;
-}
-
-.mail:hover{
-  font-size: 120px;
 }
 
 .spotify{
-  height: 25vh;
   background-image: url(img/bg/spotifylong.jpg);
-  background-size: cover;
-  font-size: 100px;
-  line-height: 25vh;
-  text-align: center;
-  transition: font-size .2s ease;
 }
 
-.spotify:hover{
-  font-size: 120px;
+.medium{
+  background-image: url(img/bg/medium.png);
 }
+
+.github{
+  background-image: url(img/bg/github.jpg);
+}
+
 
 }
 
@@ -807,58 +789,18 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .instagram{
-    height: 100vh;
-    background-image: url(img/bg/instalongest.jpg);
+
+  .icon{
+    height: 50vh;
     background-size: cover;
     font-size: 120px;
-    line-height: 100vh;
+    line-height: 50vh;
     transition: font-size .2s ease;
   }
 
-  .instagram:hover{
+  .icon:hover{
     font-size: 140px;
   }
-  
-  .linkedin{
-    height: 100vh;
-    background-image: url(img/bg/linkedinlong.jpg);
-    background-size: cover;
-    font-size: 120px;
-    line-height: 100vh;
-    transition: font-size .2s ease;
-  }
-
-  .linkedin:hover{
-    font-size: 140px;
-  }
-  
-  .mail{
-    height: 100vh;
-    background-image: url(img/bg/emaillonger.jpg);
-    background-size: cover;
-    font-size: 120px;
-    line-height: 100vh;
-    transition: font-size .2s ease;
-  }
-
-  .mail:hover{
-    font-size: 140px;
-  }
-  
-  .spotify{
-    height: 100vh;
-    background-image: url(img/bg/spotifylong.jpg);
-    background-size: cover;
-    font-size: 120px;
-    line-height: 100vh;
-    transition: font-size .2s ease;
-  }
-
-  .spotify:hover{
-    font-size: 140px;
-  }
-  
 
 }
 
@@ -868,48 +810,12 @@ img {
 
 @media screen and (min-width: 992px) {
 
-  .instagram{
-    height: 100vh;
-    background-image: url(img/bg/instalongest.jpg);
-    background-size: cover;
+  .icon{
     font-size: 140px;
   }
 
-  .instagram:hover{
+  .icon:hover{
     font-size: 160px;
   }
   
-  .linkedin{
-    height: 100vh;
-    background-image: url(img/bg/linkedinlong.jpg);
-    background-size: cover;
-    font-size: 140px;
-  }
-
-  .linkedin:hover{
-    font-size: 160px;
-  }
-  
-  .mail{
-    height: 100vh;
-    background-image: url(img/bg/emaillonger.jpg);
-    background-size: cover;
-    font-size: 140px;
-  }
-
-  .mail:hover{
-    font-size: 160px;
-  }
-  
-  .spotify{
-    height: 100vh;
-    background-image: url(img/bg/spotifylong.jpg);
-    background-size: cover;
-    font-size: 140px;
-  }
-
-  .spotify:hover{
-    font-size: 160px;
-  }
-
 }
