@@ -633,6 +633,87 @@ img {
   text-align: center;
 }
 
+/* YOSEMITE SITE */
+
+.yosemite-site{
+  background-color:black;
+  color:white;
+  height: 33vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.yosemite-site-bg{
+  background-image: url(img/bg/yosemite_bg.png);
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity .5s linear;
+}
+
+.yosemite-site-bg-overlay{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color: rgba(0,0,0,.5)
+}
+
+.hover-yosemite-site-txt{
+  position: absolute;
+  font-size: 1.35rem;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: center;
+  opacity: 0;
+  padding: 0 1em;
+  transition: opacity .3s linear;
+  left: 0;
+  top: 35%;
+  display: flex;
+  align-items: center;
+}
+
+.non-hover-yosemite-site-txt{
+  font-size: 2em;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  z-index: 10;
+}
+
+.non-hover-yosemite-site-txt:hover{
+  text-decoration: none;
+}
+
+.yosemite-tag:hover{
+  text-decoration: none;
+}
+
+.yosemite-site:hover .hover-yosemite-site-txt{
+  opacity: 1;
+}
+
+.yosemite-site:hover .non-hover-yosemite-site-txt{
+  opacity: 0;
+}
+
+.non-hover-yosemite-site-txt{
+  transition: opacity .3s linear;
+}
+
+.yosemite-site:hover .yosemite-site-bg{
+  opacity: 1;
+} 
+
 
 }
 
@@ -655,10 +736,14 @@ img {
   height: 100vh;
   width: 33vw;
   }
+
+  .yosemite-site{
+    height: 100vh;
+    width: 50vw;
+  }
   
   .coming-soon{
   height: 100vh;
-  width: 100vw;
   font-size: 3rem;
   }
 
@@ -687,6 +772,11 @@ img {
     font-size: 1.5rem;
     top:40%;
   }
+
+  .hover-yosemite-site-txt{
+    font-size: 1.5rem;
+    top:45%;
+  }
   
 
 }
@@ -707,6 +797,10 @@ img {
   }
 
   .hover-charlie-site-txt{
+    font-size: 2rem;
+  }
+
+  .hover-yosemite-site-txt{
     font-size: 2rem;
   }
 }
