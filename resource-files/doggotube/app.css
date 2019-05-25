@@ -1,0 +1,16 @@
+img {display:inline-block; vertical-align:middle; max-width:100%;}
+
+header {background-color:#c23616;}
+
+.border-top{
+    border-color: #323639;
+}
+
+a{
+    margin: 10px 0px;
+}
+
+h2{
+    font-weight: 100;
+    font-size: 35px;
+}

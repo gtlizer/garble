@@ -10,7 +10,7 @@ html,body{
 a{text-decoration: none; color:white;}
 a:visited{color:white;}
 a:active{color:white;}
-a:hover{color:white;}
+a:hover{color:white; text-decoration: none;}
 
 .togglebars{
 outline: none !important;
@@ -606,33 +606,6 @@ img {
   opacity: 1;
 }
 
-/* COMING SOON */
-
-.coming-soon{
-  background-color:white;
-  color:black;
-  height: 34vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: default;
-}
-
-.coming-soon-txt{
-  transition: transform .3s ease-in-out;
-}
-
-.coming-soon-txt:hover{
-  transform: scale(1.2);
-}
-
-.coming-soon{
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 1;
-  text-align: center;
-}
-
 /* YOSEMITE SITE */
 
 .yosemite-site{
@@ -714,6 +687,299 @@ img {
   opacity: 1;
 } 
 
+/* ROCK PAPER SCISSORS JS */
+
+
+.rock-paper{
+  background-color:white;
+  color: black;
+  height: 33vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.rock-paper:hover .hover-rock-paper-txt{
+  opacity: 1;
+}
+
+.rock-paper:hover .non-hover-rock-paper-txt{
+  opacity: 0;
+}
+
+.non-hover-rock-paper-txt{
+  transition: opacity .3s linear;
+}
+
+.rock-paper:hover .rock-paper-bg{
+  opacity: 1;
+} 
+
+.hover-rock-paper-txt{
+  position: absolute;
+  font-size: 1.35rem;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: center;
+  opacity: 0;
+  padding: 0 1em;
+  transition: opacity .3s linear;
+  left: 0;
+  top: 35%;
+  display: flex;
+  align-items: center;
+}
+
+.non-hover-rock-paper-txt{
+  font-size: 2em;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  z-index: 10;
+}
+
+
+/* TO DO LIST JS */
+
+
+.to-do{
+  background-color:white;
+  color: black;
+  height: 33vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.to-do:hover .hover-to-do-txt{
+  opacity: 1;
+}
+
+.to-do:hover .non-hover-to-do-txt{
+  opacity: 0;
+}
+
+.non-hover-to-do-txt{
+  transition: opacity .3s linear;
+}
+
+.to-do:hover .to-do-bg{
+  opacity: 1;
+} 
+
+.hover-to-do-txt{
+  position: absolute;
+  font-size: 1.35rem;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: center;
+  opacity: 0;
+  padding: 0 1em;
+  transition: opacity .3s linear;
+  top: 45%;
+  display: flex;
+  align-items: center;
+}
+
+.non-hover-to-do-txt{
+  font-size: 2em;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  z-index: 10;
+}
+
+
+/* DOGGOTUBE */
+
+
+.doggotube{
+  background-color:black;
+  color: white;
+  height: 33vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.doggotube-bg{
+  background-image: url(img/bg/doggotube.png);
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity .5s linear;
+}
+
+.doggotube-bg-overlay{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color: rgba(0,0,0,.7)
+}
+
+.doggotube:hover .hover-doggotube-txt{
+  opacity: 1;
+}
+
+.doggotube:hover .non-hover-doggotube-txt{
+  opacity: 0;
+}
+
+.non-hover-doggotube-txt{
+  transition: opacity .3s linear;
+}
+
+.doggotube:hover .doggotube-bg{
+  opacity: 1;
+} 
+
+.doggotube:hover .doggotube-bg{
+  opacity: 1;
+}
+
+.hover-doggotube-txt{
+  position: absolute;
+  font-size: 1.35rem;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: center;
+  opacity: 0;
+  padding: 0 1em;
+  transition: opacity .3s linear;
+  left: 0;
+  top: 35%;
+  display: flex;
+  align-items: center;
+}
+
+.non-hover-doggotube-txt{
+  font-size: 2em;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  z-index: 10;
+}
+
+
+/* NEWS 365 */
+
+
+.news365{
+  background-color:white;
+  color: black;
+  height: 33vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.news365-bg{
+  background-image: url(img/bg/news365.png);
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity .5s linear;
+}
+
+.news365-bg-overlay{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color: rgba(0,0,0,.7);
+  opacity: 0;
+}
+
+.news365:hover{
+  color:white;
+}
+
+.news365:hover .hover-news365-txt{
+  opacity: 1;
+}
+
+.news365:hover .non-hover-news365-txt{
+  opacity: 0;
+}
+
+.non-hover-news365-txt{
+  transition: opacity .3s linear;
+}
+
+.news365:hover .news365-bg{
+  opacity: 1;
+} 
+
+.news365:hover .news365-bg-overlay{
+  opacity: 1;
+} 
+
+.hover-news365-txt{
+  position: absolute;
+  font-size: 1.35rem;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: center;
+  opacity: 0;
+  padding: 0 1em;
+  transition: opacity .3s linear;
+  top: 35%;
+  display: flex;
+  align-items: center;
+}
+
+.non-hover-news365-txt{
+  font-size: 2em;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  z-index: 10;
+}
+
+
+/* COMING SOON */
+
+.coming-soon{
+  background-color:black;
+  color:white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+  height: 33vh;
+}
+
+.coming-soon-txt{
+  transition: transform .3s ease-in-out;
+}
+
+.coming-soon-txt:hover{
+  transform: scale(1.2);
+}
+
+.coming-soon{
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
 
 }
 
@@ -739,11 +1005,31 @@ img {
 
   .yosemite-site{
     height: 100vh;
+    width: 33vw;
+  }
+
+  .rock-paper{
+    height: 100vh;
+    width: 34vw;
+  }
+
+  .to-do{
+    height: 100vh;
+    width: 33vw;
+  }
+
+  .doggotube{
+    height: 100vh;
+    width: 50vw;
+  }
+
+  .news365{
+    height: 100vh;
     width: 50vw;
   }
   
   .coming-soon{
-  height: 100vh;
+  height: 50vh;
   font-size: 3rem;
   }
 
@@ -777,6 +1063,26 @@ img {
     font-size: 1.5rem;
     top:45%;
   }
+
+  .hover-rock-paper-txt{
+    font-size: 1.5rem;
+    top:45%;
+  }
+
+  .hover-to-do-txt{
+    font-size: 1.5rem;
+    top:45%;
+  }
+
+  .hover-doggotube-txt{
+    font-size: 1.5rem;
+    top:45%;
+  }
+
+  .hover-news365-txt{
+    font-size: 1.5rem;
+    top:45%;
+  }
   
 
 }
@@ -803,6 +1109,25 @@ img {
   .hover-yosemite-site-txt{
     font-size: 2rem;
   }
+
+  .hover-rock-paper-txt{
+    font-size: 2rem;
+  }
+
+  .hover-to-do-txt{
+    font-size: 2rem;
+  }
+
+  .hover-doggotube-txt{
+    font-size: 2rem;
+  }
+
+  .hover-news365-txt{
+    font-size: 2rem;
+  }
+
+
+
 }
 
 

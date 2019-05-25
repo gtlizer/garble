@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vanilla JS To Do</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
+
+    <style>
+        body {height:100vh;}
+        .text-strikethrough { text-decoration: line-through; }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.min.js"></script>
+</head>
+<body class="d-flex flex-column" ng-app="todoApp" ng-controller="todoCtrl">
+    <div class="bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 py-5">
+                    <form ng-submit="add_todo()">
+                        <div class="form-group">
+                            <label for="add_new_todo" class="text-light">Add New Todo:</label><br/>
+                            <input class="form-control" ng-model="new_todo" type="text" placeholder="Enter New Todo" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-light flex-grow-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12  py-5">
+                    <h4 class="font-weight-normal">Your To-Do List</h4>
+
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex align-items-center" ng-repeat="item in todos" ng-if="item.is_done === false">
+                            <span class="mr-auto">{{ item.title }}</span>
+
+                            <button class="btn btn-sm btn-success mr-1" type="button" ng-click="complete_todo(item)">
+                                Done
+                            </button>
+                            <button class="btn btn-sm btn-danger" type="button" ng-click="delete_todo(item)">
+                                Delete
+                            </button>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center bg-light" ng-repeat="item in todos track by $index" ng-if="item.is_done === true">
+                            <span class="mr-auto text-strikethrough">{{ item.title }}</span>
+
+                            <button class="btn btn-sm btn-danger" type="button" ng-click="delete_todo(item)">
+                                Delete
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
