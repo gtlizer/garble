@@ -54,6 +54,41 @@
           </button>
       </nav>
   </nav>
+  <div class="position-relative container-fluid px-0 exchangeagram-container">
+      <div class="row no-gutters social-flex">
+        <div class="project-item exchangeagram col-12">
+            <div class="exchangeagram-bg"></div>
+            <div class="exchangeagram-bg-overlay"></div>
+            <div class="non-hover-exchangeagram-txt">
+              Exchange-A-Gram
+            </div>
+            <div class="hover-exchangeagram-txt">
+              Designed and built a basic version of Instagram using AngularJS
+              <div class="exchangeagram-flex">
+                <div class="exchangeagram-link">
+                  <button class="btn btn-primary">
+                    <a href="https://github.com/gtlizer/exchange-a-gram">
+                      Github Repo
+                    </a>
+                  </button>
+                </div>
+                <div class="exchangeagram-link">
+                  <button class="btn btn-primary">
+                      <a href="https://www.youtube.com/watch?v=jxvdsdGavq0">
+                        Inspiration
+                      </a>
+                  </button>
+                </div>
+                <div class="exchangeagram-link">
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                    Video walkthrough
+                  </button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+  </div>
     <div class="position-relative container-fluid px-0">
         <div class="row no-gutters social-flex">
           <div class="project-item zoo-site col-xs-12 col-md">
@@ -61,7 +96,9 @@
               Redesign of the Syracuse Zoo Website (Desktop only)
             </div>
             <div class="hover-zoo-txt-flex">
+              
               <div class="hover-zoo-txt">
+                <div class="zoo-site-bg-overlay"></div>
                 <a href="https://www.rosamondgiffordzoo.org/" target="_blank">
                   <p>Original Zoo Website</p>
                 </a>
@@ -129,7 +166,7 @@
       <div class="row no-gutters social-flex">
           <a href="resource-files/rock-paper/index.html">
             <div class="project-item rock-paper col-12">
-              <div class="non-hover-rock-paper-txt">
+              <div class="non-hover-rock-paper-txt px-3">
                 Javascript Rock Paper Scissors Game
               </div>
               <div class="hover-rock-paper-txt">
@@ -171,6 +208,24 @@
       </div>
     </div>
 
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Video Walkthrough</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <video width="90%" height="90%" controls>
+              <source src="resource-files/exchangeagram/Exchange-A-Gram.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

@@ -393,6 +393,95 @@ img {
   position: relative;
 }
 
+/* EXCHANGEAGRAM */
+
+.exchangeagram{
+  background-color:black;
+  color:white;
+  height: 33vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 100px 0px;
+}
+
+.exchangeagram-bg{
+  background-image: url(img/bg/exchange-a-gram.png);
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity .5s linear;
+}
+
+.exchangeagram-bg-overlay{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color: rgba(0,0,0,.7)
+}
+
+.hover-exchangeagram-txt{
+  position: absolute;
+  font-size: 1.35rem;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: center;
+  opacity: 0;
+  padding: 0 1em;
+  transition: opacity .3s linear;
+  top: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.exchangeagram-flex{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.exchangeagram-link{
+  padding: 10px;
+}
+
+.non-hover-exchangeagram-txt{
+  font-size: 2em;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  z-index: 10;
+}
+
+.non-hover-exchangeagram-txt:hover{
+  text-decoration: none;
+}
+
+.exchangeagram-container:hover .hover-exchangeagram-txt{
+  opacity: 1;
+}
+
+.exchangeagram-container:hover .non-hover-exchangeagram-txt{
+  opacity: 0;
+}
+
+.non-hover-exchangeagram-txt{
+  transition: opacity .3s linear;
+}
+
+.exchangeagram-container:hover .exchangeagram-bg{
+  opacity: 1;
+}
+
+
 /* ZOO */
 
 .zoo-site{
@@ -402,6 +491,7 @@ img {
   align-items: center;
   justify-content: center;
   text-align: center;
+  position: relative;
 }
 
 .hover-zoo-txt-flex{
@@ -417,16 +507,15 @@ img {
   transition: opacity .5s ease;
 }
 
-.hover-zoo-txt-flex::after{
-  content: '';
-  display: block;
-  width: 100%;
-  height:100%;
-  position: fixed;
+.zoo-site-bg-overlay{
+  position: absolute;
   top:0;
   left:0;
-  background-color: rgba(0,0,0,.5);
+  width:100%;
+  height:100%;
+  background-color: rgba(0,0,0,.6)
 }
+
 
 .hover-zoo-txt{
   width: 50%;
@@ -964,6 +1053,9 @@ img {
   justify-content: center;
   cursor: default;
   height: 33vh;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
 }
 
 .coming-soon-txt{
@@ -972,12 +1064,6 @@ img {
 
 .coming-soon-txt:hover{
   transform: scale(1.2);
-}
-
-.coming-soon{
-  font-size: 2rem;
-  font-weight: 500;
-  text-align: center;
 }
 
 
@@ -991,6 +1077,12 @@ img {
   .zoo-site{
   height: 100vh;
   width: 33vw;
+  }
+
+  .exchangeagram{
+    height: 50vh;
+    width: 100vw;
+  font-size: 1.5rem;
   }
   
   .biome-identification{
@@ -1083,6 +1175,11 @@ img {
     font-size: 1.5rem;
     top:45%;
   }
+
+  .hover-exchangeagram-txt{
+    font-size: 1.5rem;
+    top:37%;
+  }
   
 
 }
@@ -1123,6 +1220,10 @@ img {
   }
 
   .hover-news365-txt{
+    font-size: 2rem;
+  }
+
+  .hover-exchangeagram-txt{
     font-size: 2rem;
   }
 
