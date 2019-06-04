@@ -393,6 +393,102 @@ img {
   position: relative;
 }
 
+
+/* ischool-publibraries */
+
+.ischool-publibraries{
+  background-color:white;
+  color:black;
+  height: 33vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 100px 0px;
+}
+
+.ischool-publibraries-bg{
+  background-image: url(img/bg/ischool_publibraries_page.png);
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity .5s linear;
+}
+
+.ischool-publibraries-bg-overlay{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color: rgba(0,0,0,.7);
+  opacity: 0;
+}
+
+.hover-ischool-publibraries-txt{
+  position: absolute;
+  font-size: 1.35rem;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: center;
+  opacity: 0;
+  padding: 0 1em;
+  transition: opacity .3s linear;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color:white;
+}
+
+.ischool-publibraries-flex{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.ischool-publibraries-link{
+  padding: 10px;
+}
+
+.non-hover-ischool-publibraries-txt{
+  font-size: 2em;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  z-index: 10;
+}
+
+.non-hover-ischool-publibraries-txt:hover{
+  text-decoration: none;
+}
+
+.ischool-publibraries-container:hover .hover-ischool-publibraries-txt{
+  opacity: 1;
+}
+
+.ischool-publibraries-container:hover .non-hover-ischool-publibraries-txt{
+  opacity: 0;
+}
+
+.non-hover-ischool-publibraries-txt{
+  transition: opacity .3s linear;
+}
+
+.ischool-publibraries-container:hover .ischool-publibraries-bg{
+  opacity: 1;
+}
+
+.ischool-publibraries:hover .ischool-publibraries-bg-overlay{
+  opacity: 1;
+} 
+
+
 /* EXCHANGEAGRAM */
 
 .exchangeagram{
@@ -1084,6 +1180,12 @@ img {
     width: 100vw;
   font-size: 1.5rem;
   }
+
+  .ischool-publibraries{
+    height: 50vh;
+    width: 100vw;
+  font-size: 1.5rem;
+  }
   
   .biome-identification{
   height: 100vh;
@@ -1176,8 +1278,8 @@ img {
     top:45%;
   }
 
-  .hover-exchangeagram-txt{
-    font-size: 1.5rem;
+  .hover-ischool-publibraries-txt{
+    font-size: 2rem;
     top:37%;
   }
   
@@ -1225,6 +1327,10 @@ img {
 
   .hover-exchangeagram-txt{
     font-size: 2rem;
+  }
+
+  .hover-ischool-publibraries-txt{
+    font-size: 2.3rem;
   }
 
 
