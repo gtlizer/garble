@@ -1559,3 +1559,43 @@ img {
   }
   
 }
+
+
+
+
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+/* ---------------------TOPHER PAGE -------------------*/
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+
+.topher{
+  background-color: black;
+  color: white;
+  font-family: 'Philosopher', sans-serif;
+}
+
+.birthday-body{
+  text-align: center;
+  padding: 5% 20%;
+  line-height: 28px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.birthday-body p{
+  margin: 5% auto;
+  width: 40vw;
+}
+
+.birthday-body h3,.birthday-body h2{
+  font-size: 40px;
+}
+
+.birthday-body h3{
+  margin-top: 50px;
+}
+
+.download-daus-site{
+  margin-top: 20%;
+}
